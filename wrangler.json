@@ -1,0 +1,9 @@
+{
+  "name": "svoy-ritm",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-07",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "vars": { "SCHOOLS_HOST": "lyceum.schools.by" }
+}
