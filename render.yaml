@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: svoy-ritm
+    runtime: node
+    plan: free
+    region: frankfurt
+    branch: main
+    autoDeployTrigger: off
+    buildCommand: node --check server.mjs
+    startCommand: node server.mjs
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: SCHOOLS_HOST
+        value: lyceum.schools.by
